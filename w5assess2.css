@@ -1,0 +1,141 @@
+body {
+    color: white;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+  }
+  main {
+    background-image: url("bg-intro-mobile.png");
+    background-size:auto;
+    background-color: hsl(0, 100%, 74%);
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 25px 1fr 50px;
+    grid-template-rows: 25px 2fr 10fr 100px;
+  
+  }
+  img {
+    width: auto;
+    height: auto;
+  }
+  .left {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: auto;
+    align-self: start;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .right {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: auto;
+    place-self: center;
+  }
+  .top {
+    width: 80%;
+    margin: auto;
+    background: hsl(248, 32%, 49%);
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 2px -2px hsl(0, 46%, 30%);
+  }
+  .trial {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .bottom {
+    width: 70%;
+    margin: auto;
+    background: white;
+    overflow: hidden;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 10px 2px -2px hsl(0, 46%, 30%);
+  }
+  input {
+    width: 90%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+    color: hsl(249, 10%, 26%);
+    text-indent: 2rem;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: thin;
+    outline: none;
+    font-size: 16px;
+  }
+  button {
+    width: 90%;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    border-style: none;
+    box-shadow: 0 10px 2px -2px hsl(154, 70%, 26%);
+  }
+  .terms {
+    color: hsl(246, 25%, 77%);
+    font-size: 16px;
+  }
+  a {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .bold {
+    font-weight: 700;
+  }
+  
+  @media only screen and (min-width: 1300px) {
+    main {
+      background-image: url("bg-intro-desktop.png");
+      background-color: hsl(0, 100%, 74%);
+      padding: 40px 10px;
+      display: grid;
+      grid-template-columns: 100px 1fr 70px 50px 1fr 100px;
+      grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+    }
+    .left {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      text-align: left;
+      height: auto;
+      place-self: center;
+    }
+    .learn {
+      font-size: 2rem;
+    }
+    .right {
+      grid-column-start: 5;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      grid-row-end: 5;
+  
+      height: auto;
+      place-self: center;
+    }
+    .terms {
+      font-size: 13px;
+    }
+  }
